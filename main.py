@@ -19,17 +19,17 @@ for article in top_headlines['articles']:
     date = f'<blockquote>{article["publishedAt"].replace("T"," ").replace("Z"," UTC")}</blockquote>\n'
     description = f'<p><b>{article["description"]}</b></p>\n'
     img = f'<img src=\"{article["urlToImage"]}\"></img>\n'
-    content = f'<p>{article["content"].split("[")[0] if article["content"] != None else ""}<a href=\"{article["url"]}\">click here</a></p>\n'
+    content = f'<p>{article["content"].split("[")[0].replace("<","").replace(">","") if article["content"] != None else ""}<a href=\"{article["url"]}\">click here</a></p>\n'
     page_content += title+date+description+img+content+'<hr></hr>\n'
 
 # create a telegraph page
 tg = Telegraph(auth_token)
-url = tg.create_page('Telegraph Today',html_content=page_content)
+response = tg.create_page('Telegraph Today',html_content=page_content)
 
 # send it via telegram
-bot = TeleBot(api_key)
-bot.send_message(chat_id,url)
+bot = telebot.TeleBot(api_key)
+bot.send_message(chat_id,response['url'])
 
 #log the newspapers
 with open('newslogs.txt','a') as file:
-    file.writelines(f'{str(datetime.now())} - {url}\n')
+    file.writelines(f'{str(datetime.now())} - {response["url"]}\n')
