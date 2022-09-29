@@ -1,8 +1,7 @@
 from newsapi import NewsApiClient
-from telebot import TeleBot
 from telegraph import Telegraph
 from datetime import datetime
-import os
+import os, telebot
 
 # set-up env variables
 auth_token = os.environ['TELEGRAPH_TOKEN']
