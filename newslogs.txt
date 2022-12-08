@@ -66,3 +66,4 @@
 2022-12-05 01:58:10.023332 - https://telegra.ph/Telegraph-Today-12-05
 2022-12-06 01:59:11.157183 - https://telegra.ph/Telegraph-Today-12-06
 2022-12-07 02:07:19.266524 - https://telegra.ph/Telegraph-Today-12-07
+2022-12-08 02:02:06.067396 - https://telegra.ph/Telegraph-Today-12-08
