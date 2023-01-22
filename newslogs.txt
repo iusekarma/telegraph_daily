@@ -111,3 +111,4 @@
 2023-01-19 02:04:17.479797 - https://telegra.ph/Telegraph-Today-01-19
 2023-01-20 02:02:40.571040 - https://telegra.ph/Telegraph-Today-01-20
 2023-01-21 01:55:25.946034 - https://telegra.ph/Telegraph-Today-01-21
+2023-01-22 02:01:13.761247 - https://telegra.ph/Telegraph-Today-01-22
