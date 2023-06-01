@@ -223,3 +223,4 @@
 2023-05-29 01:54:24.883881 - https://telegra.ph/Telegraph-Today-05-29
 2023-05-30 01:54:08.762629 - https://telegra.ph/Telegraph-Today-05-30
 2023-05-31 02:09:38.532913 - https://telegra.ph/Telegraph-Today-05-31
+2023-06-01 02:29:22.284437 - https://telegra.ph/Telegraph-Today-06-01
