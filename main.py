@@ -12,6 +12,11 @@ news_api_key = os.environ['NEWS_API']
 # create html content for telegraph page
 newsapi = NewsApiClient(api_key=news_api_key)
 top_headlines = newsapi.get_top_headlines(language='en',country='in')
+
+if not top_headlines:
+    print("No articles found")
+    exit()
+
 page_content = ''
 for article in top_headlines['articles']:
     title = f'<h3>{article["title"]}</h3>\n'
